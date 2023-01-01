@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "arial";
+    src: url(../font/arial.ttf) format('ttf');
+    src: url(../font/arialbd.ttf) format('ttf');
+    src: url(../font/arialbi.ttf) format('ttf');
+    src: url(../font/ariali.ttf) format('ttf');
+}
+@font-face {
+    font-family: "roboto";
+    src: url(../font/Roboto-Black.ttf) format('ttf');
+    src: url(../font/Roboto-Bold.ttf) format('ttf');
+    src: url(../font/Roboto-BoldItalic.ttf) format('ttf');
+    src: url(../font/Roboto-Light.ttf) format('ttf');
+    src: url(../font/Roboto-Medium.ttf) format('ttf');
+    src: url(../font/Roboto-Regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: "yekan";
+    src: url(../font/Yekan.eot) format('eot');
+    src: url(../font/Yekan.svg) format('svg');
+    src: url(../font/Yekan.ttf) format('ttf');
+    src: url(../font/Yekan.woff) format('woff');
+}
