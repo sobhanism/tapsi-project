@@ -1,0 +1,7 @@
+#main_header {
+    background-color: var(--headernavbarbg);
+}
+
+.header {
+    display: flex;
+}
