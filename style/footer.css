@@ -1,0 +1,69 @@
+#main_footer {
+    background: #000;
+    color: #fff;
+    padding: 5% 10%;
+}
+
+#main_footer h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#main_footer p {
+    color: #acacac;
+}
+
+.footer .footer_container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    flex-wrap: wrap;
+}
+
+.footer .footer_container .brand_col {
+    font-size: 12px;
+    width: 15%;
+}
+
+.footer .footer_container .brand_col .footer_logo {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .footer_container .footer_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer_container .footer_col .link {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer .footer_container .footer_col .link:hover {
+    color: var(--orangecolor);
+}
+
+.footer .footer_container .trust_col {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    max-width: 26%;
+    width: 26%;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.footer .footer_container .trust_col .trust_logo {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0.2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
