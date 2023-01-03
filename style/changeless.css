@@ -21,6 +21,7 @@
 
 body {
     direction: rtl;
+    overflow-x: hidden;
 }
 
 a {  
