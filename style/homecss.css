@@ -34,7 +34,7 @@
     object-fit: cover;
 }
 #main_content #section1 .map {
-    bottom: -15%;
+    bottom: -10%;
     left: 10%;
     position: absolute;
 }
@@ -53,13 +53,9 @@
 }
 #main_content #section1 .container_mainbtn .title {
     color: #fff;
-    font-size: 50px;
-    font-weight: 700;
 }
 #main_content #section1 .container_mainbtn .sub_title {
     color: #fff;
-    font-size: 24px;
-    margin-bottom: 30px;
 }
 #main_content #section1 .container_mainbtn .intro_btn {
     display: flex;
@@ -99,4 +95,34 @@ div :is(.intro_btn_passanger,.driver_btn) {
 }
 :is(.intro_btn_passanger,.driver_btn) p:hover {
     color: rgb(175, 173, 173);
+}
+
+#section2 .services {
+    padding: 0 10%;
+    margin-top: 5rem;
+}
+
+#section2 .services .icon_container {
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    max-width: 100%;
+    overflow: auto;
+}
+#section2 .services .icon_container .main_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 95px;
+}
+#section2 .services .icon_container .main_icon img {
+    opacity: 0.35;
+}
+#section2 .services .icon_container .main_icon:hover img {
+opacity: 1;
+}
+#section2 .services .icon_container .main_icon p {
+    text-align: center;
+    color: var(--matncolor);
 }

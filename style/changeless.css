@@ -31,3 +31,12 @@ a {
 li {
     list-style-type: none;
 }
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+}
+.sub_title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
