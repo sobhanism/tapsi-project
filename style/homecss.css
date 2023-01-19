@@ -1,66 +1,60 @@
+/* ---------------------
+notification_banner 
+--------------------- */
 #notification_banner {
     background: url(../image/web-banner.jpg);
-    position: relative;
-    /* top: 6rem; */
-    min-height: 4rem;
+    background-size: cover;
+    width: 100%;
     display: flex;
+    min-height: 3rem;
     align-items: center;
     justify-content: space-between;
-    background-size: cover;
     padding: 0 10%;
 }
-
-#notification_banner .tap30_pack {
+#notification_banner .btn_header {
     background-color: var(--bluecolor);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.25rem 1rem;
-    color: #fff;
-    display: block;
 }
 #notification_banner p {
-    font-size: 1rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-#main_content {
-    width: 100vw;
-    height: 100vh;
+/* ---------------------
+main_section1 
+--------------------- */
+#section1 .container_sec1 {
+    background: url(../image/بنر\ تپسی.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
     position: relative;
 }
-#main_content #section1 .tap30_banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#main_content #section1 .map {
-    bottom: -10%;
-    left: 10%;
-    position: absolute;
-}
-#main_content #section1 .map img {
-    height: 40rem;
-    width: 100%;
-}
-#main_content #section1 .container_mainbtn {
+#section1 .container_sec1 .content_container {
     background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
-    border-radius: 20px;
-    padding: 25px;
-    width: 528px;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 35%;
     position: absolute;
-    top: 10%;
-    right: 10%; 
+    top: 15%;
+    right: 10%;
 }
-#main_content #section1 .container_mainbtn .title {
+
+#section1 .container_sec1 .content_container .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 0;
+}
+#section1 .container_sec1 .content_container .sub_title {
     color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
-#main_content #section1 .container_mainbtn .sub_title {
-    color: #fff;
-}
-#main_content #section1 .container_mainbtn .intro_btn {
+#main_section #section1 .container_sec1 .content_container .intro_btn,a {
     display: flex;
+    align-items: center;
+    gap: 1rem;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 div :is(.intro_btn_passanger,.driver_btn) {
@@ -69,33 +63,60 @@ div :is(.intro_btn_passanger,.driver_btn) {
     width: 48%;
     border: 2px solid #fff;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
-#main_content #section1 .container_mainbtn .intro_btn .intro_btn_passanger {
-    background-color: #fff;
+#main_section #section1 .container_sec1 .content_container .intro_btn .intro_btn_passanger {
+    background-color: #fff;  
 }
 
-#main_content #section1 .container_mainbtn .intro_btn .driver_btn {
+#main_section #section1 .container_sec1 .content_container .intro_btn .driver_btn {
     background: transparent;
 } 
-
-:is(.intro_btn_passanger,.driver_btn) .download_btn {
-    display: flex;
-    align-items: center;
-}
-
-#main_content #section1 .container_mainbtn .intro_btn .intro_btn_passanger .download_btn {
+#main_section #section1 .container_sec1 .content_container .intro_btn .intro_btn_passanger a {
     color: #000;
 }
-#main_content #section1 .container_mainbtn .intro_btn .driver_btn .download_btn {
-    color: #fff;
+
+#main_section #section1 .container_sec1 .content_container .intro_btn .driver_btn a{
+    color: #FFF;
+} 
+
+p :is(.intro_btn_passanger,.driver_btn) {
+    margin: 0 auto;
 }
-:is(.intro_btn_passanger,.driver_btn) p {
-    margin: auto;
-}
+
 :is(.intro_btn_passanger,.driver_btn) p:hover {
     color: rgb(175, 173, 173);
 }
+
+#main_section #section1 .container_sec1 .banner_phone {
+    bottom: -50%;
+    height: 140%;
+    left: 10%;
+    position: absolute;
+}
+
+/* ---------------------
+section _ services 
+--------------------- */
+#section_services .container_sevices .icon_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: auto;
+}
+#section_services .container_sevices .icon_container .main_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 6rem;
+}
+#section_services .container_sevices .icon_container .main_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*
 
 #section2 .services {
     padding: 0 10%;
@@ -125,4 +146,4 @@ opacity: 1;
 #section2 .services .icon_container .main_icon p {
     text-align: center;
     color: var(--matncolor);
-}
+} */
