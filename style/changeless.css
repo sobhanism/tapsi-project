@@ -42,16 +42,23 @@ li {
 }
 
 .title { /*for tag h2 in main section*/
-    color: #000;
+    color: var(--titleh2);
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .sub_title{ /*for tag h3 in main section*/
-    color: #4d4d4d;
+    color: var(--matncolor);
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
     margin-top: 50px;
+}
+
+.master_subtitle {
+    color: #141414;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
