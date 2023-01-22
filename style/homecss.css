@@ -22,11 +22,13 @@ notification_banner
 main_section1 
 --------------------- */
 #section1 .container_sec1 {
-    background: url(../image/بنر\ تپسی.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 70vh;
+    height: 100vh;
     position: relative;
+}
+#section1 .container_sec1 .bgbanner{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
 }
 #section1 .container_sec1 .content_container {
     background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
@@ -81,7 +83,7 @@ div :is(.intro_btn_passanger,.driver_btn) {
     color: #FFF;
 } 
 
-p :is(.intro_btn_passanger,.driver_btn) {
+:is(.intro_btn_passanger,.driver_btn) p {
     margin: 0 auto;
 }
 
@@ -90,8 +92,8 @@ p :is(.intro_btn_passanger,.driver_btn) {
 }
 
 #main_section #section1 .container_sec1 .banner_phone {
-    bottom: -50%;
-    height: 140%;
+    bottom: -4%;
+    height: 92%;
     left: 10%;
     position: absolute;
 }
@@ -99,44 +101,69 @@ p :is(.intro_btn_passanger,.driver_btn) {
 /* ---------------------
 section _ services 
 --------------------- */
+#section_services {
+    margin: 0 10%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 100px;
+/* //    padding-top: 30px; */
+}
 #section_services .container_sevices .icon_container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    overflow: auto;
-}
-#section_services .container_sevices .icon_container .main_icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 6rem;
-}
-#section_services .container_sevices .icon_container .main_icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/*
-
-#section2 .services {
-    padding: 0 10%;
-    margin-top: 5rem;
-}
-
-#section2 .services .icon_container {
     border-bottom: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 50px 0;
     max-width: 100%;
     overflow: auto;
 }
-#section2 .services .icon_container .main_icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 95px;
+#section_services .container_sevices .icon_container>div {
+    min-width: 6rem;
+    margin: 0 1rem;
 }
+#section_services .container_sevices .icon_container .main_icon{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    max-width: 6rem;
+}
+#section_services .container_sevices .icon_container .main_icon p {
+    text-align: center;
+    color: var(--headernavbarcolor);
+}
+#section_services .container_sevices .icon_container .main_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+}
+#section_services .container_sevices .icon_container .main_icon:hover img {
+    opacity: 1;
+}
+#section_services .container_sevices .description_part {
+    display: flex;
+    width: 100%;
+    gap: 10rem;
+}
+#section_services .container_sevices .description_part .content_container{
+    width: 50%;
+}
+#section_services .container_sevices .description_part .content_container .description {
+    color: #333;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+#section_services .container_sevices .description_part .image_container {
+    width: 50%;
+}
+#section_services .container_sevices .description_part .image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
 #section2 .services .icon_container .main_icon img {
     opacity: 0.35;
 }
